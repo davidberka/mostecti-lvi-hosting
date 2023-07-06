@@ -27,16 +27,21 @@
   </head>
   <body>
     <header class="relative z-50">
-      <div class="hidden bg-secondary">
-        <div class="container">
-          <span>Mostečtí lvi</span>
+      <div class="hidden bg-secondary lg:block">
+        <div class="container pl-48">
+          <span class="text-5xl font-bold uppercase text-white/25"
+            >Mostečtí lvi</span
+          >
         </div>
       </div>
       <div class="sticky bg-primary">
-        <div class="container flex min-h-[70px] items-center">
-          <a href="index.html" class="absolute top-2 z-100 w-20">
+        <div class="container flex min-h-[70px] items-center lg:min-h-max">
+          <a
+            href="index.html"
+            class="absolute top-2 z-100 w-20 lg:-top-9 lg:w-[120px]"
+          >
             <img
-              class="h-auto w-full"
+              class="h-auto w-full transition-transform hover:scale-105"
               src="./dist/img/logo.png"
               width="120"
               height="125"
@@ -46,7 +51,7 @@
           </a>
 
           <nav class="menu-container">
-            <ul>
+            <ul class="flex flex-col lg:flex-row lg:items-center">
               <li class="menu-item group">
                 <a class="menu-link" href="#">Klub</a>
                 <ul class="dropdown-menu">
@@ -121,22 +126,22 @@
 
     <main>
       <section
-        class="container my-8 grid grid-cols-1 gap-5"
+        class="container my-8 grid grid-cols-1 gap-5 lg:my-10 lg:grid-cols-3 lg:gap-6"
         aria-label="TOP články"
       >
-        <a href="article.html" class="group">
+        <a href="article.html" class="group lg:col-span-2">
           <article
-            class="relative flex aspect-[3/2] w-full items-end before:absolute before:inset-0 before:z-1 before:bg-gradient-to-t before:from-white/90 before:to-transparent"
+            class="relative flex aspect-[3/2] w-full items-end overflow-hidden before:absolute before:inset-0 before:z-1 before:bg-gradient-to-t before:from-white/90 before:to-transparent lg:aspect-[4/3]"
           >
             <img
-              class="absolute inset-0 mb-4 h-full w-full"
+              class="absolute inset-0 mb-4 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
               src="https://picsum.photos/808/606"
               width="808"
               height="606"
               loading="lazy"
               alt=""
             />
-            <div class="relative z-10 p-4">
+            <div class="relative z-10 p-4 lg:p-8">
               <div class="mb-2 flex items-center gap-3">
                 <span
                   class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
@@ -148,82 +153,92 @@
                   >3. 7. 2023</time
                 >
               </div>
-              <h1 class="text-xl/6 font-bold text-dark">
+              <h1
+                class="text-xl/6 font-bold text-dark group-hover:underline lg:text-3xl"
+              >
                 Web je na dovolené. Více info na našem facebooku.
               </h1>
             </div>
           </article>
         </a>
-        <div class="flex flex-col gap-5">
-          <a href="article.html" class="group">
-            <article
-              class="relative flex aspect-[3/2] w-full items-end before:absolute before:inset-0 before:z-1 before:bg-gradient-to-t before:from-white/90 before:to-transparent"
-            >
-              <img
-                class="absolute inset-0 mb-4 h-full w-full"
-                src="https://picsum.photos/808/606"
-                width="808"
-                height="606"
-                loading="lazy"
-                alt=""
-              />
-              <div class="relative z-10 p-4">
-                <div class="mb-2 flex items-center gap-3">
-                  <span
-                    class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                    >A-tým</span
+        <div class="lg:col-span-1">
+          <div
+            class="mb-5 flex flex-col gap-5 md:flex-row lg:mb-6 lg:flex-col lg:gap-6"
+          >
+            <a href="article.html" class="group">
+              <article
+                class="relative flex aspect-[3/2] w-full items-end overflow-hidden before:absolute before:inset-0 before:z-1 before:bg-gradient-to-t before:from-white/90 before:to-transparent lg:aspect-video"
+              >
+                <img
+                  class="absolute inset-0 mb-4 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  src="https://picsum.photos/808/606"
+                  width="808"
+                  height="606"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="relative z-10 p-4">
+                  <div class="mb-2 flex items-center gap-3">
+                    <span
+                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                      >A-tým</span
+                    >
+                    <time
+                      class="text-sm font-semibold text-dark"
+                      datetime="2023-07-03 00:00"
+                      >3. 7. 2023</time
+                    >
+                  </div>
+                  <h3
+                    class="text-xl/6 font-bold text-dark group-hover:underline"
                   >
-                  <time
-                    class="text-sm font-semibold text-dark"
-                    datetime="2023-07-03 00:00"
-                    >3. 7. 2023</time
-                  >
+                    Web je na dovolené. Více info na našem facebooku.
+                  </h3>
                 </div>
-                <h3 class="text-xl/6 font-bold text-dark">
-                  Web je na dovolené. Více info na našem facebooku.
-                </h3>
-              </div>
-            </article>
-          </a>
+              </article>
+            </a>
 
-          <a href="article.html" class="group">
-            <article
-              class="relative flex aspect-[3/2] w-full items-end before:absolute before:inset-0 before:z-1 before:bg-gradient-to-t before:from-white/90 before:to-transparent"
-            >
-              <img
-                class="absolute inset-0 mb-4 h-full w-full"
-                src="https://picsum.photos/808/606"
-                width="808"
-                height="606"
-                loading="lazy"
-                alt=""
-              />
-              <div class="relative z-10 p-4">
-                <div class="mb-2 flex items-center gap-3">
-                  <span
-                    class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                    >A-tým</span
+            <a href="article.html" class="group">
+              <article
+                class="relative flex aspect-[3/2] w-full items-end overflow-hidden before:absolute before:inset-0 before:z-1 before:bg-gradient-to-t before:from-white/90 before:to-transparent lg:aspect-video"
+              >
+                <img
+                  class="absolute inset-0 mb-4 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  src="https://picsum.photos/808/606"
+                  width="808"
+                  height="606"
+                  loading="lazy"
+                  alt=""
+                />
+                <div class="relative z-10 p-4">
+                  <div class="mb-2 flex items-center gap-3">
+                    <span
+                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                      >A-tým</span
+                    >
+                    <time
+                      class="text-sm font-semibold text-dark"
+                      datetime="2023-07-03 00:00"
+                      >3. 7. 2023</time
+                    >
+                  </div>
+                  <h3
+                    class="text-xl/6 font-bold text-dark group-hover:underline"
                   >
-                  <time
-                    class="text-sm font-semibold text-dark"
-                    datetime="2023-07-03 00:00"
-                    >3. 7. 2023</time
-                  >
+                    Web je na dovolené. Více info na našem facebooku.
+                  </h3>
                 </div>
-                <h3 class="text-xl/6 font-bold text-dark">
-                  Web je na dovolené. Více info na našem facebooku.
-                </h3>
-              </div>
-            </article>
-          </a>
+              </article>
+            </a>
+          </div>
 
-          <a href="archive.html" class="btn btn-primary">Další články</a>
+          <a href="archive.html" class="btn btn-primary w-full">Další články</a>
         </div>
       </section>
 
-      <section class="relative flex items-center" aria-label="Zápasy">
+      <section class="relative flex items-center shadow-md" aria-label="Zápasy">
         <button
-          class="matches-slider-prev absolute left-0 top-1/2 z-1 -translate-y-1/2 rotate-180 cursor-pointer bg-dark p-2"
+          class="matches-slider-prev absolute left-0 top-1/2 z-1 -translate-y-1/2 rotate-180 cursor-pointer bg-dark p-2 lg:p-3"
         >
           <svg width="19" height="16" class="fill-white">
             <use href="#arrow"></use>
@@ -232,9 +247,9 @@
         <div class="w-0 flex-1">
           <ul class="matches-slider">
             <li class="odd:bg-gray/5">
-              <div class="flex items-start px-14 py-5">
+              <div class="flex items-start gap-6 px-10 py-5">
                 <img
-                  class="hidden aspect-square object-contain"
+                  class="mt-2 hidden aspect-square object-contain md:block"
                   src="./dist/img/logo.png"
                   width="32"
                   height="32"
@@ -242,12 +257,16 @@
                 />
                 <div class="flex-1">
                   <div>
-                    <h4 class="font-bold leading-5">Mostečtí lvi</h4>
-                    <h4 class="hidden font-bold">Mostečtí lvi</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Mostečtí lvi</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Mostečtí lvi
+                    </h4>
                   </div>
                   <div>
-                    <h4 class="font-bold leading-5">Jméno týmu</h4>
-                    <h4 class="hidden font-bold">Dlouhé jméno týmu</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Jméno týmu</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Dlouhé jméno týmu
+                    </h4>
                   </div>
                   <a
                     href="match.html"
@@ -258,16 +277,16 @@
                 <!-- add result class - win, lose -->
                 <a
                   href="match.html"
-                  class="win text-xl font-medium leading-5 hover:underline"
+                  class="win text-xl font-medium leading-5 hover:underline lg:text-2xl"
                   >5:3</a
                 >
               </div>
             </li>
 
             <li class="odd:bg-gray/5">
-              <div class="flex items-start px-14 py-5">
+              <div class="flex items-start gap-6 px-10 py-5">
                 <img
-                  class="hidden aspect-square object-contain"
+                  class="mt-2 hidden aspect-square object-contain md:block"
                   src="./dist/img/logo.png"
                   width="32"
                   height="32"
@@ -275,12 +294,16 @@
                 />
                 <div class="flex-1">
                   <div>
-                    <h4 class="font-bold leading-5">Mostečtí lvi</h4>
-                    <h4 class="hidden font-bold">Mostečtí lvi</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Mostečtí lvi</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Mostečtí lvi
+                    </h4>
                   </div>
                   <div>
-                    <h4 class="font-bold leading-5">Jméno týmu</h4>
-                    <h4 class="hidden font-bold">Dlouhé jméno týmu</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Jméno týmu</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Dlouhé jméno týmu
+                    </h4>
                   </div>
                   <a
                     href="match.html"
@@ -291,16 +314,16 @@
                 <!-- add result class - win, lose -->
                 <a
                   href="match.html"
-                  class="win text-xl font-medium leading-5 hover:underline"
+                  class="win text-xl font-medium leading-5 hover:underline lg:text-2xl"
                   >5:3</a
                 >
               </div>
             </li>
 
             <li class="odd:bg-gray/5">
-              <div class="flex items-start px-14 py-5">
+              <div class="flex items-start gap-6 px-10 py-5">
                 <img
-                  class="hidden aspect-square object-contain"
+                  class="mt-2 hidden aspect-square object-contain md:block"
                   src="./dist/img/logo.png"
                   width="32"
                   height="32"
@@ -308,12 +331,16 @@
                 />
                 <div class="flex-1">
                   <div>
-                    <h4 class="font-bold leading-5">Mostečtí lvi</h4>
-                    <h4 class="hidden font-bold">Mostečtí lvi</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Mostečtí lvi</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Mostečtí lvi
+                    </h4>
                   </div>
                   <div>
-                    <h4 class="font-bold leading-5">Jméno týmu</h4>
-                    <h4 class="hidden font-bold">Dlouhé jméno týmu</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Jméno týmu</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Dlouhé jméno týmu
+                    </h4>
                   </div>
                   <a
                     href="match.html"
@@ -324,16 +351,16 @@
                 <!-- add result class - win, lose -->
                 <a
                   href="match.html"
-                  class="win text-xl font-medium leading-5 hover:underline"
+                  class="win text-xl font-medium leading-5 hover:underline lg:text-2xl"
                   >5:3</a
                 >
               </div>
             </li>
 
             <li class="odd:bg-gray/5">
-              <div class="flex items-start px-14 py-5">
+              <div class="flex items-start gap-6 px-10 py-5">
                 <img
-                  class="hidden aspect-square object-contain"
+                  class="mt-2 hidden aspect-square object-contain md:block"
                   src="./dist/img/logo.png"
                   width="32"
                   height="32"
@@ -341,12 +368,16 @@
                 />
                 <div class="flex-1">
                   <div>
-                    <h4 class="font-bold leading-5">Mostečtí lvi</h4>
-                    <h4 class="hidden font-bold">Mostečtí lvi</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Mostečtí lvi</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Mostečtí lvi
+                    </h4>
                   </div>
                   <div>
-                    <h4 class="font-bold leading-5">Jméno týmu</h4>
-                    <h4 class="hidden font-bold">Dlouhé jméno týmu</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Jméno týmu</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Dlouhé jméno týmu
+                    </h4>
                   </div>
                   <a
                     href="match.html"
@@ -362,9 +393,9 @@
             </li>
 
             <li class="odd:bg-gray/5">
-              <div class="flex items-start px-14 py-5">
+              <div class="flex items-start gap-6 px-10 py-5">
                 <img
-                  class="hidden aspect-square object-contain"
+                  class="mt-2 hidden aspect-square object-contain md:block"
                   src="./dist/img/logo.png"
                   width="32"
                   height="32"
@@ -372,12 +403,16 @@
                 />
                 <div class="flex-1">
                   <div>
-                    <h4 class="font-bold leading-5">Mostečtí lvi</h4>
-                    <h4 class="hidden font-bold">Mostečtí lvi</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Mostečtí lvi</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Mostečtí lvi
+                    </h4>
                   </div>
                   <div>
-                    <h4 class="font-bold leading-5">Jméno týmu</h4>
-                    <h4 class="hidden font-bold">Dlouhé jméno týmu</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Jméno týmu</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Dlouhé jméno týmu
+                    </h4>
                   </div>
                   <a
                     href="match.html"
@@ -393,9 +428,9 @@
             </li>
 
             <li class="odd:bg-gray/5">
-              <div class="flex items-start px-14 py-5">
+              <div class="flex items-start gap-6 px-10 py-5">
                 <img
-                  class="hidden aspect-square object-contain"
+                  class="mt-2 hidden aspect-square object-contain md:block"
                   src="./dist/img/logo.png"
                   width="32"
                   height="32"
@@ -403,12 +438,16 @@
                 />
                 <div class="flex-1">
                   <div>
-                    <h4 class="font-bold leading-5">Mostečtí lvi</h4>
-                    <h4 class="hidden font-bold">Mostečtí lvi</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Mostečtí lvi</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Mostečtí lvi
+                    </h4>
                   </div>
                   <div>
-                    <h4 class="font-bold leading-5">Jméno týmu</h4>
-                    <h4 class="hidden font-bold">Dlouhé jméno týmu</h4>
+                    <h4 class="font-bold leading-5 lg:hidden">Jméno týmu</h4>
+                    <h4 class="hidden font-bold leading-5 lg:block">
+                      Dlouhé jméno týmu
+                    </h4>
                   </div>
                   <a
                     href="match.html"
@@ -425,7 +464,7 @@
           </ul>
         </div>
         <button
-          class="matches-slider-next absolute right-0 top-1/2 z-1 -translate-y-1/2 cursor-pointer bg-dark p-2"
+          class="matches-slider-next absolute right-0 top-1/2 z-1 -translate-y-1/2 cursor-pointer bg-dark p-2 lg:p-3"
         >
           <svg width="19" height="16" class="fill-white">
             <use href="#arrow"></use>
@@ -433,624 +472,692 @@
         </button>
       </section>
 
-      <div class="container my-8 grid grid-cols-1 gap-8">
-        <section aria-label="Tabulka">
-          <h2 class="mb-4 text-xl font-bold uppercase text-dark">Tabulka</h2>
+      <div class="bg-secondary xs:py-8 lg:py-10">
+        <div
+          class="container grid grid-cols-1 gap-8 bg-white py-8 xs:p-8 xs:shadow-md lg:grid-cols-3 lg:p-10"
+        >
+          <section aria-label="Tabulka">
+            <h2
+              class="mb-4 text-xl font-bold uppercase text-dark lg:mb-6 lg:text-2xl"
+            >
+              Tabulka
+            </h2>
 
-          <div class="mb-6 overflow-x-auto">
-            <table class="styled">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Tým</th>
-                  <th>Z</th>
-                  <th>V</th>
-                  <th>VP</th>
-                  <th>PP</th>
-                  <th>P</th>
-                  <th>Skóre</th>
-                  <th>B</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+            <div
+              class="mb-6 overflow-x-auto scrollbar-thin scrollbar-thumb-secondary/50"
+            >
+              <table class="table-hp">
+                <thead>
+                  <tr>
+                    <th class="text-start">#</th>
+                    <th class="text-start">Tým</th>
+                    <th>Z</th>
+                    <th>V</th>
+                    <th>VP</th>
+                    <th>PP</th>
+                    <th>P</th>
+                    <th>Skóre</th>
+                    <th class="text-end">B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>2.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>3.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>4.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>5.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>6.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>7.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>8.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>9.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>10.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>11.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>11.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>12.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>13.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
+                  <tr>
+                    <td>13.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
 
-                <tr>
-                  <td>14.</td>
-                  <td>
-                    <div class="flex items-center gap-2">
-                      <img
-                        src="./dist/img/logo.png"
-                        class="aspect-square object-contain"
-                        width="16"
-                        height="16"
-                        loading="lazy"
-                        alt=""
-                      />
-                      MOS
-                    </div>
-                  </td>
-                  <td>30</td>
-                  <td>20</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>80:50</td>
-                  <td>67</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                  <tr>
+                    <td>14.</td>
+                    <td>
+                      <div class="flex items-center gap-2">
+                        <img
+                          src="./dist/img/logo.png"
+                          class="aspect-square object-contain"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        MOS
+                      </div>
+                    </td>
+                    <td class="text-center">30</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">80:50</td>
+                    <td class="text-end"><b>67</b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-          <a href="standings.html" class="btn btn-primary">Kompletní tabulka</a>
-        </section>
+            <a href="standings.html" class="btn btn-primary"
+              >Kompletní tabulka</a
+            >
+          </section>
 
-        <section class="Další články">
-          <h2 class="mb-4 text-xl font-bold uppercase text-dark">
-            Další články
-          </h2>
+          <section class="Další články">
+            <h2
+              class="mb-4 text-xl font-bold uppercase text-dark lg:mb-6 lg:text-2xl"
+            >
+              Další články
+            </h2>
 
-          <div class="mb-6 flex flex-col gap-5">
-            <a href="article.html" class="group">
-              <article class="flex flex-col gap-3">
-                <img
-                  class="aspect-video"
-                  src="https://picsum.photos/500/300"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="mb-2 flex items-center gap-3">
-                    <span
-                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                      >A-tým</span
-                    >
-                    <time
-                      class="text-sm font-semibold text-dark"
-                      datetime="2023-07-03 00:00"
-                      >3. 7. 2023</time
-                    >
+            <div class="mb-6 flex flex-col gap-5">
+              <a href="article.html" class="group">
+                <article
+                  class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 lg:aspect-square"
+                      src="https://picsum.photos/295/166"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
-                  <h3 class="text-lg/6 font-bold text-dark">
-                    Web je na dovolené. Více info na našem facebooku.
-                  </h3>
-                </div>
-              </article>
-            </a>
-
-            <a href="article.html" class="group">
-              <article class="flex flex-col gap-3">
-                <img
-                  class="aspect-video"
-                  src="https://picsum.photos/500/300"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="mb-2 flex items-center gap-3">
-                    <span
-                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                      >A-tým</span
+                  <div>
+                    <div class="mb-2 flex items-center gap-3">
+                      <span
+                        class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                        >A-tým</span
+                      >
+                      <time
+                        class="text-sm font-semibold text-dark"
+                        datetime="2023-07-03 00:00"
+                        >3. 7. 2023</time
+                      >
+                    </div>
+                    <h3
+                      class="text-lg/6 font-bold text-dark group-hover:underline"
                     >
-                    <time
-                      class="text-sm font-semibold text-dark"
-                      datetime="2023-07-03 00:00"
-                      >3. 7. 2023</time
-                    >
+                      Web je na dovolené. Více info na našem facebooku.
+                    </h3>
                   </div>
-                  <h3 class="text-lg/6 font-bold text-dark">
-                    Web je na dovolené. Více info na našem facebooku.
-                  </h3>
-                </div>
-              </article>
-            </a>
+                </article>
+              </a>
 
-            <a href="article.html" class="group">
-              <article class="flex flex-col gap-3">
-                <img
-                  class="aspect-video"
-                  src="https://picsum.photos/500/300"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="mb-2 flex items-center gap-3">
-                    <span
-                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                      >A-tým</span
-                    >
-                    <time
-                      class="text-sm font-semibold text-dark"
-                      datetime="2023-07-03 00:00"
-                      >3. 7. 2023</time
-                    >
+              <a href="article.html" class="group">
+                <article
+                  class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 lg:aspect-square"
+                      src="https://picsum.photos/295/166"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
-                  <h3 class="text-lg/6 font-bold text-dark">
-                    Web je na dovolené. Více info na našem facebooku.
-                  </h3>
-                </div>
-              </article>
-            </a>
-          </div>
-
-          <a href="archive.html" class="btn btn-primary">Archiv článků</a>
-        </section>
-
-        <section class="Mládež">
-          <h2 class="mb-4 text-xl font-bold uppercase text-dark">Mládež</h2>
-
-          <ul class="mb-4 flex items-center gap-2 overflow-x-auto">
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U1</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U2</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U3</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U4</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U5</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U6</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U7</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U8</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block bg-dark px-3 py-1 text-white hover:underline"
-                >U9</a
-              >
-            </li>
-          </ul>
-
-          <div class="mb-6 flex flex-col gap-5">
-            <a href="article.html" class="group">
-              <article class="flex flex-col gap-3">
-                <img
-                  class="aspect-video"
-                  src="https://picsum.photos/500/300"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="mb-2 flex items-center gap-3">
-                    <span
-                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                      >A-tým</span
+                  <div>
+                    <div class="mb-2 flex items-center gap-3">
+                      <span
+                        class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                        >A-tým</span
+                      >
+                      <time
+                        class="text-sm font-semibold text-dark"
+                        datetime="2023-07-03 00:00"
+                        >3. 7. 2023</time
+                      >
+                    </div>
+                    <h3
+                      class="text-lg/6 font-bold text-dark group-hover:underline"
                     >
-                    <time
-                      class="text-sm font-semibold text-dark"
-                      datetime="2023-07-03 00:00"
-                      >3. 7. 2023</time
-                    >
+                      Web je na dovolené. Více info na našem facebooku.
+                    </h3>
                   </div>
-                  <h3 class="text-lg/6 font-bold text-dark">
-                    Web je na dovolené. Více info na našem facebooku.
-                  </h3>
-                </div>
-              </article>
-            </a>
+                </article>
+              </a>
 
-            <a href="article.html" class="group">
-              <article class="flex flex-col gap-3">
-                <img
-                  class="aspect-video"
-                  src="https://picsum.photos/500/300"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="mb-2 flex items-center gap-3">
-                    <span
-                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                      >A-tým</span
-                    >
-                    <time
-                      class="text-sm font-semibold text-dark"
-                      datetime="2023-07-03 00:00"
-                      >3. 7. 2023</time
-                    >
+              <a href="article.html" class="group">
+                <article
+                  class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 lg:aspect-square"
+                      src="https://picsum.photos/295/166"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
-                  <h3 class="text-lg/6 font-bold text-dark">
-                    Web je na dovolené. Více info na našem facebooku.
-                  </h3>
-                </div>
-              </article>
-            </a>
-
-            <a href="article.html" class="group">
-              <article class="flex flex-col gap-3">
-                <img
-                  class="aspect-video"
-                  src="https://picsum.photos/500/300"
-                  loading="lazy"
-                  alt=""
-                />
-                <div>
-                  <div class="mb-2 flex items-center gap-3">
-                    <span
-                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
-                      >A-tým</span
+                  <div>
+                    <div class="mb-2 flex items-center gap-3">
+                      <span
+                        class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                        >A-tým</span
+                      >
+                      <time
+                        class="text-sm font-semibold text-dark"
+                        datetime="2023-07-03 00:00"
+                        >3. 7. 2023</time
+                      >
+                    </div>
+                    <h3
+                      class="text-lg/6 font-bold text-dark group-hover:underline"
                     >
-                    <time
-                      class="text-sm font-semibold text-dark"
-                      datetime="2023-07-03 00:00"
-                      >3. 7. 2023</time
-                    >
+                      Web je na dovolené. Více info na našem facebooku.
+                    </h3>
                   </div>
-                  <h3 class="text-lg/6 font-bold text-dark">
-                    Web je na dovolené. Více info na našem facebooku.
-                  </h3>
-                </div>
-              </article>
-            </a>
-          </div>
+                </article>
+              </a>
+            </div>
 
-          <a href="youth.html" class="btn btn-primary">Více o mládeži</a>
-        </section>
+            <a href="archive.html" class="btn btn-primary">Archiv článků</a>
+          </section>
+
+          <section class="Mládež">
+            <h2
+              class="mb-4 text-xl font-bold uppercase text-dark lg:mb-6 lg:text-2xl"
+            >
+              Mládež
+            </h2>
+
+            <ul
+              class="mb-4 flex items-center gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-secondary/50"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U1</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U2</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U3</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U4</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U5</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U6</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U7</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U8</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block bg-dark px-3 py-1 text-white hover:underline"
+                  >U9</a
+                >
+              </li>
+            </ul>
+
+            <div class="mb-6 flex flex-col gap-5">
+              <a href="#" class="group">
+                <article
+                  class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 lg:aspect-square"
+                      src="https://picsum.photos/295/166"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="mb-2 flex items-center gap-3">
+                      <span
+                        class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                        >A-tým</span
+                      >
+                      <time
+                        class="text-sm font-semibold text-dark"
+                        datetime="2023-07-03 00:00"
+                        >3. 7. 2023</time
+                      >
+                    </div>
+                    <h3
+                      class="text-lg/6 font-bold text-dark group-hover:underline"
+                    >
+                      Web je na dovolené. Více info na našem facebooku.
+                    </h3>
+                  </div>
+                </article>
+              </a>
+
+              <a href="#" class="group">
+                <article
+                  class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 lg:aspect-square"
+                      src="https://picsum.photos/295/166"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="mb-2 flex items-center gap-3">
+                      <span
+                        class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                        >A-tým</span
+                      >
+                      <time
+                        class="text-sm font-semibold text-dark"
+                        datetime="2023-07-03 00:00"
+                        >3. 7. 2023</time
+                      >
+                    </div>
+                    <h3
+                      class="text-lg/6 font-bold text-dark group-hover:underline"
+                    >
+                      Web je na dovolené. Více info na našem facebooku.
+                    </h3>
+                  </div>
+                </article>
+              </a>
+
+              <a href="#" class="group">
+                <article
+                  class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="aspect-video w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105 lg:aspect-square"
+                      src="https://picsum.photos/295/166"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="mb-2 flex items-center gap-3">
+                      <span
+                        class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                        >A-tým</span
+                      >
+                      <time
+                        class="text-sm font-semibold text-dark"
+                        datetime="2023-07-03 00:00"
+                        >3. 7. 2023</time
+                      >
+                    </div>
+                    <h3
+                      class="text-lg/6 font-bold text-dark group-hover:underline"
+                    >
+                      Web je na dovolené. Více info na našem facebooku.
+                    </h3>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <a href="youth.html" class="btn btn-primary">Více o mládeži</a>
+          </section>
+        </div>
       </div>
 
-      <section class="container my-10" aria-label="Partneři">
+      <section class="container my-10 lg:my-12" aria-label="Partneři">
         <ul class="partners-slider">
           <li>
             <a href="#" target="_blank">
@@ -1250,7 +1357,7 @@
     </main>
 
     <footer class="bg-dark">
-      <div class="container py-8">
+      <div class="container py-8 lg:py-10">
         <ul></ul>
         <ul class="flex flex-wrap gap-8 pb-8">
           <li>
