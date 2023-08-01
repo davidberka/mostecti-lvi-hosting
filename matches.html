@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: "High School USA Sans";
+        src: url("/dist/font/High_School_USA_Sans.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="./dist/css/style.css" />
+    <script defer src="./dist/js/main.js"></script>
+    <script defer src="./dist/js/cookie-consent-config.js"></script>
+    <script defer src="./dist/js/cookie-consent.js"></script>
+    <script
+      defer
+      src="./dist/js/cookie-consent-social.js"
+      type="text/plain"
+      data-cookiecategory="social"
+    ></script>
+
+    <title>Tipsport Extraliga 2023/2024 | Mostečtí lvi</title>
+  </head>
+  <body>
+    <header class="relative z-50">
+      <div class="hidden bg-secondary lg:block">
+        <div class="container flex items-center justify-between pl-48">
+          <span class="text-5xl font-bold uppercase text-white/25"
+            >Mostečtí lvi</span
+          >
+          <ul class="flex items-center gap-4">
+            <li>
+              <a class="btn btn-header" href="#" target="_blank">Vstupenky</a>
+            </li>
+            <li>
+              <a
+                class="block transition-transform hover:scale-105"
+                href="#"
+                target="_blank"
+              >
+                <svg width="24" height="24" class="fill-white">
+                  <use href="#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="block transition-transform hover:scale-105"
+                href="#"
+                target="_blank"
+              >
+                <svg width="24" height="24" class="fill-white">
+                  <use href="#ig"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="block transition-transform hover:scale-105"
+                href="#"
+                target="_blank"
+              >
+                <svg width="24" height="24" class="fill-white">
+                  <use href="#mail"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-sticky bg-gradient-to-t from-dark to-primary">
+        <div class="container flex min-h-[70px] items-center lg:min-h-max">
+          <a
+            href="index.html"
+            class="absolute top-2 z-100 w-20 transition-all lg:w-[120px]"
+            id="logo"
+          >
+            <img
+              class="h-auto w-full transition-transform hover:scale-105"
+              src="./dist/img/logo.png"
+              width="120"
+              height="125"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+
+          <nav class="menu-container">
+            <ul class="flex flex-col lg:flex-row lg:items-center">
+              <li class="menu-item group">
+                <a class="menu-link" href="#">Klub</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Dropdown link 1</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Dropdown link 2</a>
+                  </li>
+                  <li class="dropdown-menu-item">
+                    <a class="dropdown-menu-link" href="#">Dropdown link 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item group">
+                <a class="menu-link" href="#">A-tým</a>
+              </li>
+              <li class="menu-item group">
+                <a class="menu-link" href="#">Mládež</a>
+              </li>
+              <li class="menu-item group">
+                <a class="menu-link" href="#">Vstupenky</a>
+              </li>
+              <li class="menu-item group">
+                <a class="menu-link" href="#">Fotogalerie</a>
+              </li>
+              <li class="menu-item group">
+                <a class="menu-link" href="#">Partneři</a>
+              </li>
+              <li class="menu-item group">
+                <a class="menu-link" href="#">Fanshop</a>
+              </li>
+            </ul>
+            <ul class="mt-8 flex items-center justify-center gap-4 lg:hidden">
+              <li>
+                <a class="btn btn-header" href="#" target="_blank">Vstupenky</a>
+              </li>
+              <li>
+                <a
+                  class="block transition-transform hover:scale-105"
+                  href="#"
+                  target="_blank"
+                >
+                  <svg width="24" height="24" class="fill-white">
+                    <use href="#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="block transition-transform hover:scale-105"
+                  href="#"
+                  target="_blank"
+                >
+                  <svg width="24" height="24" class="fill-white">
+                    <use href="#ig"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="block transition-transform hover:scale-105"
+                  href="#"
+                  target="_blank"
+                >
+                  <svg width="24" height="24" class="fill-white">
+                    <use href="#mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            class="burger-menu ml-auto"
+            type="button"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              class="burger-menu-icon burger-menu-open"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              class="burger-menu-icon burger-menu-close"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script async src="./dist/js/menu.js"></script>
+
+    <main class="container my-8 grid grid-cols-1 gap-8 lg:my-10 lg:grid-cols-3">
+      <section class="lg:col-span-2">
+        <div class="mx-auto lg:w-[95%]">
+          <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
+            <h1 class="text-2xl font-bold text-dark lg:text-4xl">
+              Tipsport Extraliga 2023/24
+            </h1>
+            <form
+              id="matches-form"
+              method="GET"
+              class="flex flex-wrap items-center gap-3"
+            >
+              <select
+                class="custom-select min-w-[120px]"
+                name="match_type"
+                id="match_type"
+                onchange="document.querySelector('#matches-form').submit()"
+              >
+                <option value="">všechny</option>
+                <option value="home">doma</option>
+                <option value="away">venku</option>
+              </select>
+              <select
+                class="custom-select min-w-[150px]"
+                name="season"
+                id="season"
+                onchange="document.querySelector('#matches-form').submit()"
+              >
+                <option value="2024">2023/2024</option>
+                <option value="2023">2022/2023</option>
+              </select>
+            </form>
+          </div>
+
+          <!-- <p class="notice w-max">Nebyly nalezeny žádné zápasy.</p> -->
+
+          <ul class="divide-y divide-dark/10">
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-6">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">1. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <a
+                class="win text-2xl font-bold hover:underline lg:text-3xl"
+                href="match.html"
+                >3:0</a
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-6">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">2. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <a
+                class="win text-2xl font-bold hover:underline lg:text-3xl"
+                href="match.html"
+                >3:0</a
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-6">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">3. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <a
+                class="win text-2xl font-bold hover:underline lg:text-3xl"
+                href="match.html"
+                >3:0</a
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-6">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">4. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <a
+                class="win text-2xl font-bold hover:underline lg:text-3xl"
+                href="match.html"
+                >3:0</a
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-6">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">5. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <a
+                class="win text-2xl font-bold hover:underline lg:text-3xl"
+                href="match.html"
+                >3:0</a
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-6">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">6. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <a
+                class="win text-2xl font-bold hover:underline lg:text-3xl"
+                href="match.html"
+                >3:0</a
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">7. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">8. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">9. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">10. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">11. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">12. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">13. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+
+            <li class="flex flex-wrap items-center gap-3 px-3 py-6 md:gap-8">
+              <div class="hidden gap-3 sm:flex">
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+                <img
+                  class="aspect-square object-contain"
+                  src="./dist/img/logo.png"
+                  height="56"
+                  width="56"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <span class="text-sm">14. kolo, 28. 7. 2023</span>
+                <div class="flex flex-wrap items-center gap-3">
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                  <span class="pb-0.5">vs</span>
+                  <h4 class="whitespace-nowrap text-lg font-bold">
+                    Mostečtí lvi
+                  </h4>
+                </div>
+              </div>
+              <time
+                class="text-2xl font-bold lg:text-3xl"
+                datetime="2023-07-28 18:00"
+                >18:00</time
+              >
+              <div class="w-full md:w-max">
+                <a class="btn btn-secondary" href="#" target="_blank"
+                  >On-line</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <aside class="flex flex-col gap-8 lg:col-span-1">
+        <div>
+          <h2 class="mb-2 text-xl font-bold uppercase text-primary lg:text-2xl">
+            A-tým
+          </h2>
+          <ul>
+            <li class="border-b border-b-dark/10 last:border-b-0">
+              <!-- active class: 'text-primary' -->
+              <a href="#" class="block p-3 font-medium hover:underline"
+                >Soupiska</a
+              >
+            </li>
+
+            <li class="border-b border-b-dark/10 last:border-b-0">
+              <!-- active class: 'text-primary' -->
+              <a href="#" class="block p-3 font-medium hover:underline"
+                >Realizační tým</a
+              >
+            </li>
+
+            <li class="border-b border-b-dark/10 last:border-b-0">
+              <!-- active class: 'text-primary' -->
+              <a href="#" class="block p-3 font-medium hover:underline"
+                >Zápasy</a
+              >
+            </li>
+
+            <li class="border-b border-b-dark/10 last:border-b-0">
+              <!-- active class: 'text-primary' -->
+              <a href="#" class="block p-3 font-medium hover:underline"
+                >Tabulka</a
+              >
+            </li>
+
+            <li class="border-b border-b-dark/10 last:border-b-0">
+              <!-- active class: 'text-primary' -->
+              <a href="#" class="block p-3 font-medium hover:underline"
+                >Statistiky</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2
+            class="mb-4 text-xl font-bold uppercase text-primary lg:mb-6 lg:text-2xl"
+          >
+            Další články
+          </h2>
+
+          <div class="mb-6 flex flex-col gap-5">
+            <a href="article.html" class="group">
+              <article
+                class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:aspect-square"
+                    src="https://picsum.photos/100"
+                    srcset="
+                      https://picsum.photos/100     100w,
+                      https://picsum.photos/295/166 295w,
+                      https://picsum.photos/439/247 439w
+                    "
+                    sizes="(min-width: 1100px) 100px, (min-width: 768px) 295px, calc(100vw - 24px)"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="mb-2 flex items-center gap-3">
+                    <span
+                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                      >A-tým</span
+                    >
+                    <time
+                      class="text-sm font-semibold text-dark"
+                      datetime="2023-07-03 00:00"
+                      >3. 7. 2023</time
+                    >
+                  </div>
+                  <h3
+                    class="text-lg/6 font-bold text-dark group-hover:underline"
+                  >
+                    Web je na dovolené. Více info na našem facebooku.
+                  </h3>
+                </div>
+              </article>
+            </a>
+
+            <a href="article.html" class="group">
+              <article
+                class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:aspect-square"
+                    src="https://picsum.photos/100"
+                    srcset="
+                      https://picsum.photos/100     100w,
+                      https://picsum.photos/295/166 295w,
+                      https://picsum.photos/439/247 439w
+                    "
+                    sizes="(min-width: 1100px) 100px, (min-width: 768px) 295px, calc(100vw - 24px)"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="mb-2 flex items-center gap-3">
+                    <span
+                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                      >A-tým</span
+                    >
+                    <time
+                      class="text-sm font-semibold text-dark"
+                      datetime="2023-07-03 00:00"
+                      >3. 7. 2023</time
+                    >
+                  </div>
+                  <h3
+                    class="text-lg/6 font-bold text-dark group-hover:underline"
+                  >
+                    Web je na dovolené. Více info na našem facebooku.
+                  </h3>
+                </div>
+              </article>
+            </a>
+
+            <a href="article.html" class="group">
+              <article
+                class="grid grid-cols-1 gap-3 md:grid-cols-[295px_1fr] md:gap-6 lg:grid-cols-[100px_1fr]"
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105 lg:aspect-square"
+                    src="https://picsum.photos/100"
+                    srcset="
+                      https://picsum.photos/100     100w,
+                      https://picsum.photos/295/166 295w,
+                      https://picsum.photos/439/247 439w
+                    "
+                    sizes="(min-width: 1100px) 100px, (min-width: 768px) 295px, calc(100vw - 24px)"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="mb-2 flex items-center gap-3">
+                    <span
+                      class="bg-primary px-2 py-[2px] text-sm font-semibold text-white"
+                      >A-tým</span
+                    >
+                    <time
+                      class="text-sm font-semibold text-dark"
+                      datetime="2023-07-03 00:00"
+                      >3. 7. 2023</time
+                    >
+                  </div>
+                  <h3
+                    class="text-lg/6 font-bold text-dark group-hover:underline"
+                  >
+                    Web je na dovolené. Více info na našem facebooku.
+                  </h3>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <a href="archive.html" class="btn btn-primary w-full"
+            >Archiv článků</a
+          >
+        </div>
+      </aside>
+    </main>
+
+    <footer class="bg-dark">
+      <div class="container py-8 lg:py-10">
+        <ul></ul>
+        <ul class="flex flex-wrap gap-8 pb-8">
+          <li>
+            <h5 class="mb-1 font-semibold uppercase text-secondary/75">
+              Prezident klubu
+            </h5>
+            <span class="block text-white">Jan Novák</span>
+            <a href="mailto:test@test.com" class="text-white"
+              >jan.novak@email.cz</a
+            >
+          </li>
+
+          <li>
+            <h5 class="mb-1 font-semibold uppercase text-secondary/75">
+              Prezident klubu
+            </h5>
+            <span class="block text-white">Jan Novák</span>
+            <a href="mailto:test@test.com" class="text-white"
+              >jan.novak@email.cz</a
+            >
+          </li>
+
+          <li>
+            <h5 class="mb-1 font-semibold uppercase text-secondary/75">
+              Prezident klubu
+            </h5>
+            <span class="block text-white">Jan Novák</span>
+            <a href="mailto:test@test.com" class="text-white"
+              >jan.novak@email.cz</a
+            >
+          </li>
+
+          <li>
+            <h5 class="mb-1 font-semibold uppercase text-secondary/75">
+              Prezident klubu
+            </h5>
+            <span class="block text-white">Jan Novák</span>
+            <a href="mailto:test@test.com" class="text-white"
+              >jan.novak@email.cz</a
+            >
+          </li>
+
+          <li>
+            <h5 class="mb-1 font-semibold uppercase text-secondary/75">
+              Prezident klubu
+            </h5>
+            <span class="block text-white">Jan Novák</span>
+            <a href="mailto:test@test.com" class="text-white"
+              >jan.novak@email.cz</a
+            >
+          </li>
+
+          <li>
+            <h5 class="mb-1 font-semibold uppercase text-secondary/75">
+              Prezident klubu
+            </h5>
+            <span class="block text-white">Jan Novák</span>
+            <a href="mailto:test@test.com" class="text-white"
+              >jan.novak@email.cz</a
+            >
+          </li>
+        </ul>
+        <div class="border-t border-secondary/25 pt-8">
+          <p class="text-sm uppercase text-secondary/75">
+            Copyright &copy; 2010 - 2023 Mostečtí lvi &
+            <a
+              href="https://esportsmedia.cz/"
+              target="_blank"
+              class="hover:underline"
+              >esports.cz s.r.o.</a
+            >
+            |
+            <a
+              href="javascript:void(0);"
+              data-cc="c-settings"
+              aria-haspopup="dialog"
+              class="hover:underline"
+              >Nastavení cookies</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div style="display: none">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <symbol id="accordion-arrow" viewBox="0 0 20 20">
+          <path
+            d="m9.293 12.95.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+          />
+        </symbol>
+        <symbol id="arrow" viewBox="0 -960 960 960">
+          <path
+            d="m480-160-42-43 247-247H160v-60h525L438-757l42-43 320 320-320 320Z"
+          />
+        </symbol>
+        <symbol id="fb" viewBox="0 0 24 24">
+          <g fill="none">
+            <path
+              d="M9.684 11.314h4.631m.001-3.859h-.81a2.278 2.278 0 0 0-2.277 2.277v6.813"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+        <symbol id="ig" viewBox="0 0 24 24">
+          <g fill="none">
+            <path
+              clip-rule="evenodd"
+              d="M7.496 3h9.009A4.495 4.495 0 0 1 21 7.496v9.009A4.495 4.495 0 0 1 16.504 21H7.496A4.495 4.495 0 0 1 3 16.504V7.496A4.495 4.495 0 0 1 7.496 3v0z"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.949 6.713a.338.338 0 1 0 .002.674.338.338 0 0 0-.002-.674m-2.403 2.741a3.6 3.6 0 1 1-5.091 5.092 3.6 3.6 0 0 1 5.09-5.092"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+        <symbol id="mail" viewBox="0 -960 960 960">
+          <path
+            d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+          />
+        </symbol>
+      </svg>
+    </div>
+  </body>
+</html>

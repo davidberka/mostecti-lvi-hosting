@@ -32,7 +32,7 @@
       data-cookiecategory="social"
     ></script>
 
-    <title>Soupiska A-tým 2023/2024 | Mostečtí lvi</title>
+    <title>Tabulka Junioři 2023/2024 | Mostečtí lvi</title>
   </head>
   <body>
     <header class="relative z-50">
@@ -212,578 +212,448 @@
         <div class="mx-auto lg:w-[95%]">
           <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
             <h1 class="text-2xl font-bold text-dark lg:text-4xl">
-              Soupiska A-tým 2023/24
+              Tabulka Junioři 2023/24
             </h1>
-            <div class="flex items-center gap-3">
-              <a href="roster-table.html" class="hover:underline"
-                >Tabulková soupiska</a
-              >
-              <select
-                class="custom-select min-w-[150px]"
-                name="season"
-                id="season"
-                onchange="location = this.value;"
-              >
-                <option value="/soupiska/2024">2023/2024</option>
-                <option value="/soupiska/2023">2022/2023</option>
-              </select>
-            </div>
+            <select
+              class="custom-select min-w-[150px]"
+              name="season"
+              id="season"
+              onchange="location = this.value"
+            >
+              <option value="/tabulka/2024">2023/2024</option>
+              <option value="/tabulka/2023">2022/2023</option>
+            </select>
           </div>
 
-          <!-- <p class="notice w-max">Nebyla nalezena žádná soupiska.</p> -->
+          <!-- <p class="notice w-max">Tabulka nebyla nalezena.</p> -->
 
-          <div class="flex flex-col gap-8 lg:gap-10">
-            <div>
-              <h3
-                class="mb-4 text-xl font-bold uppercase text-dark lg:mb-6 lg:text-2xl"
-              >
-                Brankáři
-              </h3>
-              <ul class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+          <div
+            class="overflow-x-auto scrollbar-thin scrollbar-thumb-secondary/50"
+          >
+            <table class="styled">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="text-left">Tým</th>
+                  <th>Z</th>
+                  <th>V</th>
+                  <th>VP</th>
+                  <th>R</th>
+                  <th>PP</th>
+                  <th>P</th>
+                  <th>Skóre</th>
+                  <th>B</th>
+                  <th>RB</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">1.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">2.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">3.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">4.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">5.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-            <div>
-              <h3
-                class="mb-4 text-xl font-bold uppercase text-dark lg:mb-6 lg:text-2xl"
-              >
-                Brankáři
-              </h3>
-              <ul class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">6.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">7.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">8.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">9.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">10.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-            <div>
-              <h3
-                class="mb-4 text-xl font-bold uppercase text-dark lg:mb-6 lg:text-2xl"
-              >
-                Brankáři
-              </h3>
-              <ul class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">11.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">12.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">13.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
 
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
+                <!-- active class = 'our-team'  -->
+                <tr>
+                  <td class="text-center">14.</td>
+                  <td>
+                    <div
+                      class="flex min-w-max items-center gap-2 whitespace-nowrap"
+                    >
                       <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
+                        src="./dist/img/logo.png"
+                        class="aspect-square object-contain"
+                        width="24"
+                        height="24"
                         loading="lazy"
                         alt=""
                       />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
+                      Mostečtí lvi
                     </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="player.html"
-                    class="group grid grid-cols-[64px_1fr] items-center gap-4"
-                  >
-                    <div class="relative aspect-square">
-                      <img
-                        class="w-full rounded-full object-cover object-center"
-                        src="https://picsum.photos/64"
-                        width="64"
-                        height="64"
-                        loading="lazy"
-                        alt=""
-                      />
-                      <b
-                        class="invisible absolute inset-0 grid h-full w-full place-items-center rounded-full bg-primary/75 text-xl text-white opacity-0 transition-all group-hover:visible group-hover:opacity-100"
-                      >
-                        32
-                      </b>
-                    </div>
-                    <div>
-                      <h4 class="font-bold group-hover:underline lg:text-lg">
-                        Dlouhé jméno
-                      </h4>
-                      <ul class="flex flex-wrap divide-x">
-                        <li class="pr-2">20. 7. 1995</li>
-                        <li class="px-2">28 let</li>
-                        <li class="px-2">185 cm</li>
-                        <li class="px-2">93 kg</li>
-                        <li class="pl-2">L</li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                  </td>
+                  <td class="text-center">120</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">0</td>
+                  <td class="text-center">22:23</td>
+                  <td class="text-center"><b>32</b></td>
+                  <td class="text-center">1</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
